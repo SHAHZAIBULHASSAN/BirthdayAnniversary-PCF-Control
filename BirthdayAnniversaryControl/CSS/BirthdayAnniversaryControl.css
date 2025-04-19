@@ -1,0 +1,112 @@
+.card {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15), -15px -15px 30px rgba(255, 255, 255, 0.9);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -5px -5px 10px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.event-item:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #e0f7fa, #b3e5fc);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #ff6f61;
+  animation: bounce 2s infinite;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.label {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.additional-info {
+  font-size: 0.9rem;
+  color: #4caf50; /* Green color for emphasis */
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.notification-badge {
+  color: red;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.upcoming {
+  border: 2px solid #ff9800; /* Highlight upcoming events */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
